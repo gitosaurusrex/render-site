@@ -1,0 +1,44 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+
+body {
+  padding: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+.movie {
+  margin: 33px;
+  padding: 25px 20px;
+  border: 3px dashed red;
+}
+
+.movie-title {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px 0;
+
+}
+
+.movie-art {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  height: auto;
+}
+
+.movie-link {
+  display: block;
+  text-align: center;
+}
