@@ -1,5 +1,6 @@
 hidden=[".config"]
 modules = ["python-3.10:v25-20230920-d4ad2e4"]
+entrypoint = "main.py"
 
 # hosting is currently hardcoded for this language
 # [hosting]
@@ -184,3 +185,6 @@ requiredFiles = [".replit", "replit.nix", ".config"]
 [deployment]
 publicDir = "/"
 deploymentTarget = "static"
+
+[unitTest]
+language = "python3"

@@ -1,6 +1,6 @@
 from flask import Flask, render_template
-#1.
-from config import config
+import os
+
 import psycopg2
 
 app = Flask(__name__)
@@ -16,8 +16,12 @@ def index():
   rowResults = None
   #2.
   try:
-    params = config()
-    conn = psycopg2.connect(**params)
+    conn = psycopg2.connect(database=os.environ['db_name'],
+                            user=os.environ['db_user'],
+                            password=os.environ['db_password'],
+                            host=os.environ['db_host'],
+                            port=os.environ['db_port'])
+
     cur = conn.cursor()
     order_statement = 'SELECT * FROM movies;'
     cur.execute(order_statement)
