@@ -16,16 +16,16 @@
 
     <article class="movies">
 
-      {% if recentRecords==[] %}
+      {% if movies==[] %}
       <p>
         Not enough data
       </p>
       {% else %}
-      {% for i in recentRecords %}
-      <section class="movie movie--{{i[0]}}">
-        <img class="movie-art" src="{{i[1]}}" />
-        <h2 class="movie-title">{{i[2]}}</h2>
-        <a class="movie-link" href="{{i[3]}}">watch</a>
+      {% for movie_id, movie_art_url, movie_title, movie_watch_url in movies %}
+      <section class="movie movie--{{ movie_id }}">
+        <img class="movie-art" src="{{ movie_art_url }}" />
+        <h2 class="movie-title">{{ movie_title }}</h2>
+        <a class="movie-link" href="{{ movie_watch_url }}">watch</a>
       </section>
       {% endfor %}
       {% endif %}

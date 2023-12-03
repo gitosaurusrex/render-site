@@ -35,7 +35,7 @@ def index():
       cur.close()
       conn.close()
       print("database connection is now closed")
-  return render_template('index.html', recentRecords=rowResults)
+  return render_template('index.html', movies=rowResults)
 
 
 if __name__ == '__main__':
