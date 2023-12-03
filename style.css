@@ -5,8 +5,8 @@ body {
   cursor: default;
 }
 
-body {
-  padding: 15px;
+main {
+  padding: 45px;
   background-color: #000000;
   color: #ffffff;
   font-family: 'Courier New', Courier, monospace;
@@ -16,16 +16,23 @@ h1 {
   text-align: center;
 }
 
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .movie {
+  flex: 0 1 220px;
   margin: 33px;
   padding: 25px 20px;
-  border: 3px dashed red;
+  border: 2px dashed red;
+  text-align: center;
 }
 
 .movie-title {
   font-size: 1rem;
   letter-spacing: 2px;
-  text-align: center;
   padding: 5px 0;
   max-width: 90%;
   margin: 0 auto;
@@ -33,11 +40,9 @@ h1 {
 
 .movie-art {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
 }
 
 .movie-link {
   display: block;
-  text-align: center;
 }
