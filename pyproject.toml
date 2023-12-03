@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Replit user <<>>"]
 readme = "README.md"
-packages = [{include = "repl_html_render_site"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
