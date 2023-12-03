@@ -46,3 +46,9 @@ h1 {
 .movie-link {
   display: block;
 }
+
+.fineprint {
+  text-align: center;
+  font-size: .8rem;
+  padding: 5px 0;
+}
